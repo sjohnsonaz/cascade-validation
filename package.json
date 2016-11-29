@@ -5,8 +5,8 @@
   "author": "Sean Johnson <sjohnson@sjohnsonaz.com>",
   "contributors": [],
   "license": "MIT",
-  "main": "dist/scripts/CascadeValication.js",
-  "typings": "dist/scripts/CascadeValication.d.ts",
+  "main": "dist/scripts/CascadeValidation.js",
+  "typings": "dist/scripts/CascadeValidation.d.ts",
   "scripts": {
     "install": "",
     "build": "tsc",
