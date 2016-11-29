@@ -21,7 +21,7 @@
     "url": "https://github.com/sjohnsonaz/cascade.git"
   },
   "dependencies": {
-    "cascade": "0.0.4",
+    "cascade": "0.0.5",
     "es6-shim": "^0.35.1",
     "reflect-metadata": "^0.1.8"
   },
