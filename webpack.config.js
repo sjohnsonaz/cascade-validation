@@ -2,10 +2,11 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        'cascade': ['./src/scripts/CascadeValidation.ts']
+        'cascadeValidation': ['./src/scripts/CascadeValidation.ts'],
+        'vendor': ['cascade']
     },
     output: {
-        filename: './dist/bundle/[name].js',
+        filename: './dist/bundle/[name].min.js',
         libraryTarget: 'var',
         library: '[name]'
     },
@@ -19,6 +20,7 @@ module.exports = {
         }]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.optimize.CommonsChunkPlugin('vendor', './dist/bundle/vendor.bundle.js')
     ]
 };
