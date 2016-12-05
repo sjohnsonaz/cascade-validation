@@ -9,13 +9,16 @@ export function required<T>(target: any, propertyKey: string, descriptor?: Typed
         enumerable: true,
         configurable: true,
         get: function() {
-            Cascade.attachGraph(this);
-            if (!this._graph.observables[validPropertyKey]) {
-                this._graph.observables[validPropertyKey] = new Rule(() => {
+            var graph = Cascade.attachGraph(this);
+            Validation.attachGraph(this);
+            if (!graph.observables[validPropertyKey]) {
+                var rule = new Rule(() => {
                     return !!this[propertyKey];
                 });
+                graph.observables[validPropertyKey] = rule;
+                Validation.addRule(this, propertyKey, rule);
             }
-            return this._graph.observables[validPropertyKey].getValue();
+            return graph.observables[validPropertyKey].getValue();
         }
     });
 }
