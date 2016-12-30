@@ -25,12 +25,12 @@
     "reflect-metadata": "^0.1.8"
   },
   "peerDependencies": {
-    "cascade": "0.0.6"
+    "cascade": "^0.0.12"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
     "@types/mocha": "^2.2.33",
-    "cascade": "0.0.6",
+    "cascade": "^0.0.12",
     "chai": "^3.5.0",
     "es6-shim": "^0.35.1",
     "jsdom": "^9.8.3",
