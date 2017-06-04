@@ -25,22 +25,24 @@
     "reflect-metadata": "^0.1.8"
   },
   "peerDependencies": {
-    "cascade": "^0.0.12"
+    "cascade": "^0.0.23"
   },
   "devDependencies": {
-    "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.33",
-    "cascade": "^0.0.12",
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "cascade": "^0.0.23",
     "chai": "^3.5.0",
-    "es6-shim": "^0.35.1",
+    "es6-shim": "^0.35.3",
     "jsdom": "^9.8.3",
-    "mocha": "^3.1.2",
-    "reflect-metadata": "^0.1.8",
-    "ts-loader": "^0.9.5",
-    "typescript": "^2.1.1",
-    "webpack": "^1.13.2"
+    "mocha": "^3.4.2",
+    "reflect-metadata": "^0.1.10",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "webpack": "^1.14.0"
   },
   "keywords": [
-    "cascade", "validation", "mvvm"
+    "cascade",
+    "validation",
+    "mvvm"
   ]
 }
