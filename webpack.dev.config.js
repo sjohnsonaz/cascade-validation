@@ -1,5 +1,6 @@
 module.exports = {
     entry: {
+        'cascadeValidation': ['./src/scripts/CascadeValidation.ts'],
         'mochaRunner': './src/mocha/BrowserRunner.ts'
     },
     output: {
@@ -9,7 +10,7 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
+        extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js']
     },
     externals: {
         mocha: 'mocha',
